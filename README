@@ -3,26 +3,26 @@ libXext
 Xorg X11 extension library
 
 Runtime requirements:
-  cygwin-1.5.19-4
-  libX11_6-1.0.0-1
-  libXau6-1.0.0-1
+  cygwin-1.5.20-1
+  libX11_6-1.0.1-1
+  libXau6-1.0.1-1
 
 Build requirements:
 (besides corresponding devel packages)
-  cygwin-1.5.19-4
-  autoconf2.5-2.59-3
-  automake1.7-1.7.9-1
+  cygwin-1.5.20-1
+  autoconf2.5-2.59-2
+  automake1.7-1.9.6-1
   binutils-20050610-1
-  cygport-0.1.0-1
+  cygport-0.2.2-1
   gawk-3.1.5-2
   gcc-core-3.4.4-1
-  libtool1.5-1.5.20-2
+  libtool1.5-1.5.22-1
   make-3.80-1
   pkg-config-0.20-1
-  sed-4.1.4-1
+  sed-4.1.5-1
   xextproto-7.0.2-1
-  xorg-util-macros-1.0.1-1
-  xproto-7.0.4-1
+  xorg-util-macros-1.0.2-1
+  xproto-7.0.7-1
 
 Canonical website:
   http://xorg.freedesktop.org/
@@ -33,17 +33,17 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack libXext-1.0.0-X-src.tar.bz2
+  unpack libXext-1.0.1-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./libXext-1.0.0-X.cygport all
+  cygport ./libXext-1.0.1-X.cygport all
 
 This will create:
-  /usr/src/libXext-1.0.0-X-src.tar.bz2
-  /usr/src/libXext-1.0.0-X.tar.bz2
-  /usr/src/libXext-doc-1.0.0-X.tar.bz2
-  /usr/src/libXext6-1.0.0-X.tar.bz2
+  /usr/src/libXext-1.0.1-X-src.tar.bz2
+  /usr/src/libXext-1.0.1-X.tar.bz2
+  /usr/src/libXext-doc-1.0.1-X.tar.bz2
+  /usr/src/libXext6-1.0.1-X.tar.bz2
 
 -------------------------------------------
 
@@ -52,11 +52,11 @@ Files included in the binary package:
   /usr/lib/libXext.dll.a
   /usr/lib/libXext.la
   /usr/lib/pkgconfig/xext.pc
-  /usr/share/doc/Cygwin/libXext-1.0.0.README
-  /usr/share/doc/libXext-1.0.0/AUTHORS
-  /usr/share/doc/libXext-1.0.0/COPYING
-  /usr/share/doc/libXext-1.0.0/ChangeLog
-  /usr/share/doc/libXext-1.0.0/INSTALL
+  /usr/share/doc/Cygwin/libXext-1.0.1.README
+  /usr/share/doc/libXext-1.0.1/AUTHORS
+  /usr/share/doc/libXext-1.0.1/COPYING
+  /usr/share/doc/libXext-1.0.1/ChangeLog
+  /usr/share/doc/libXext-1.0.1/INSTALL
 
 Files included in the runtime package:
 
@@ -118,6 +118,9 @@ Files included in the doc package:
 ------------------
 
 Port Notes:
+
+----- version 1.0.1-1 -----
+X11R7.1 version bump.
 
 ----- version 1.0.0-1 -----
 Initial Cygwin release of modular X11R7.0.
