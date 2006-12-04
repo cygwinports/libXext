@@ -1,4 +1,3 @@
 category: X11
-requires: cygwin libX11 libXau xextproto
-sdesc: "Xorg X11 extension library (development)"
+sdesc: "Xorg X11 extension library (documentation)"
 ldesc: "Xorg X11 extension library"
