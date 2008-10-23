@@ -3,26 +3,25 @@ libXext
 Xorg X11 extension library
 
 Runtime requirements:
-  cygwin-1.5.24-2
-  libX11_6-1.1.3-1
-  libXau6-1.0.3-1
+  cygwin-1.5.25-15
+  libX11_6-1.1.5-1
+  libXau6-1.0.4-1
 
 Build requirements:
 (besides corresponding devel packages)
-  cygwin-1.5.24-2
-  autoconf2.5-2.61-1
-  automake1.9-1.9.6-2
-  binutils-20060817-1
-  cygport-0.3.5-1
-  gawk-3.1.5-4
+  autoconf2.5-2.63-1
+  automake1.10-1.10.1-1
+  binutils-20080624-2
+  cygport-0.4.1-1
+  gawk-3.1.6-1
   gcc-core-3.4.4-3
-  libtool1.5-1.5.23a-2
+  libtool-2.2.6a-1
   make-3.81-1
-  pkg-config-0.21-1
+  pkg-config-0.23a-2
   sed-4.1.5-2
   xextproto-7.0.2-1
-  xorg-util-macros-1.1.5-1
-  xproto-7.0.10-1
+  xorg-util-macros-1.1.6-1
+  xproto-7.0.13-1
 
 Canonical website:
   http://xorg.freedesktop.org/
@@ -33,28 +32,33 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack libXext-1.0.3-X-src.tar.bz2
+  unpack libXext-1.0.4-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./libXext-1.0.3-X.cygport all
+  cygport ./libXext-1.0.4-X.cygport all
 
 This will create:
-  /usr/src/libXext-1.0.3-X-src.tar.bz2
-  /usr/src/libXext-1.0.3-X.tar.bz2
-  /usr/src/libXext-devel-1.0.3-X.tar.bz2
-  /usr/src/libXext6-1.0.3-X.tar.bz2
+  /usr/src/libXext-1.0.4-X-src.tar.bz2
+  /usr/src/libXext-1.0.4-X.tar.bz2
+  /usr/src/libXext-devel-1.0.4-X.tar.bz2
+  /usr/src/libXext6-1.0.4-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary packages:
 
-(libXext)
-  /usr/share/doc/Cygwin/libXext-1.0.3.README
-  /usr/share/doc/libXext-1.0.3/AUTHORS
-  /usr/share/doc/libXext-1.0.3/COPYING
-  /usr/share/doc/libXext-1.0.3/ChangeLog
-  /usr/share/doc/libXext-1.0.3/INSTALL
+(libXext6)
+  /usr/bin/cygXext-6.dll
+  /usr/share/doc/libXext-1.0.4/AUTHORS
+  /usr/share/doc/libXext-1.0.4/COPYING
+  /usr/share/doc/libXext-1.0.4/ChangeLog
+  /usr/share/doc/libXext-1.0.4/INSTALL
+
+(libXext-devel)
+  /usr/lib/libXext.dll.a
+  /usr/lib/libXext.la
+  /usr/lib/pkgconfig/xext.pc
   /usr/share/man/man3/DBE.3.gz
   /usr/share/man/man3/DPMSCapable.3.gz
   /usr/share/man/man3/DPMSDisable.3.gz
@@ -106,17 +110,12 @@ Files included in the binary packages:
   /usr/share/man/man3/XmbufGetWindowAttributes.3.gz
   /usr/share/man/man3/XmbufQueryExtension.3.gz
 
-(libXext6)
-  /usr/bin/cygXext-6.dll
-
-(libXext-devel)
-  /usr/lib/libXext.dll.a
-  /usr/lib/libXext.la
-  /usr/lib/pkgconfig/xext.pc
-
 ------------------
 
 Port Notes:
+
+----- version 1.0.4-1 -----
+X11R7.4 version bump.
 
 ----- version 1.0.3-1 -----
 X11R7.3 version bump.
