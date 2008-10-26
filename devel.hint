@@ -1,5 +1,5 @@
 category: X11
 requires: cygwin libXext6 libX11-devel libXau-devel xproto xextproto
 external-source: libXext
-sdesc: "Xorg X11 extension library (development)"
-ldesc: "Xorg X11 extension library"
+sdesc: "X.Org X11 extension library (development)"
+ldesc: "X.Org X11 extension library"
