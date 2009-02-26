@@ -4,23 +4,22 @@ X.Org X11 extension library
 
 Runtime requirements:
   cygwin-1.5.25-15
-  libX11_6-1.1.5-1
-  libXau6-1.0.4-1
+  libX11_6-1.2-1
 
 Build requirements:
 (besides corresponding devel packages)
   autoconf2.5-2.63-1
-  automake1.10-1.10.1-1
+  automake1.10-1.10.1-2
   binutils-20080624-2
-  cygport-0.4.2-1
+  cygport-0.4.4-1
   gawk-3.1.6-1
   gcc-core-3.4.4-3
   libtool-2.2.6a-1
-  make-3.81-1
+  make-3.81-2
   pkg-config-0.23a-2
   sed-4.1.5-2
-  xextproto-7.0.2-1
-  xorg-util-macros-1.1.6-1
+  xextproto-7.0.5-1
+  xorg-util-macros-1.2.1-1
   xproto-7.0.14-1
 
 Canonical website:
@@ -32,17 +31,16 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack libXext-1.0.4-X-src.tar.bz2
+  unpack libXext-1.0.5-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./libXext-1.0.4-X.cygport all
+  cygport ./libXext-1.0.5-X.cygport all
 
 This will create:
-  /usr/src/libXext-1.0.4-X-src.tar.bz2
-  /usr/src/libXext-1.0.4-X.tar.bz2
-  /usr/src/libXext-devel-1.0.4-X.tar.bz2
-  /usr/src/libXext6-1.0.4-X.tar.bz2
+  /usr/src/libXext-1.0.5-X-src.tar.bz2
+  /usr/src/libXext-devel-1.0.5-X.tar.bz2
+  /usr/src/libXext6-1.0.5-X.tar.bz2
 
 -------------------------------------------
 
@@ -50,10 +48,10 @@ Files included in the binary packages:
 
 (libXext6)
   /usr/bin/cygXext-6.dll
-  /usr/share/doc/libXext-1.0.4/AUTHORS
-  /usr/share/doc/libXext-1.0.4/COPYING
-  /usr/share/doc/libXext-1.0.4/ChangeLog
-  /usr/share/doc/libXext-1.0.4/INSTALL
+  /usr/share/doc/libXext-1.0.5/AUTHORS
+  /usr/share/doc/libXext-1.0.5/COPYING
+  /usr/share/doc/libXext-1.0.5/ChangeLog
+  /usr/share/doc/libXext-1.0.5/INSTALL
 
 (libXext-devel)
   /usr/lib/libXext.a
@@ -82,6 +80,17 @@ Files included in the binary packages:
   /usr/share/man/man3/XShapeQueryExtents.3.gz
   /usr/share/man/man3/XShapeQueryVersion.3.gz
   /usr/share/man/man3/XShapeSelectInput.3.gz
+  /usr/share/man/man3/XShm.3.gz
+  /usr/share/man/man3/XShmAttach.3.gz
+  /usr/share/man/man3/XShmCreateImage.3.gz
+  /usr/share/man/man3/XShmCreatePixmap.3.gz
+  /usr/share/man/man3/XShmDetach.3.gz
+  /usr/share/man/man3/XShmGetEventBase.3.gz
+  /usr/share/man/man3/XShmGetImage.3.gz
+  /usr/share/man/man3/XShmPixmapFormat.3.gz
+  /usr/share/man/man3/XShmPutImage.3.gz
+  /usr/share/man/man3/XShmQueryExtension.3.gz
+  /usr/share/man/man3/XShmQueryVersion.3.gz
   /usr/share/man/man3/XcupGetReservedColormapEntries.3.gz
   /usr/share/man/man3/XcupQueryVersion.3.gz
   /usr/share/man/man3/XcupStoreColors.3.gz
@@ -114,6 +123,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 1.0.5-1 -----
+Version bump.
 
 ----- version 1.0.4-1 -----
 X11R7.4 version bump.
