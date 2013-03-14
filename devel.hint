@@ -1,5 +1,0 @@
-category: X11
-requires: libXext6 libX11-devel libXau-devel xproto xextproto
-external-source: libXext
-sdesc: "X.Org X11 extension library (development)"
-ldesc: "X.Org X11 extension library"
